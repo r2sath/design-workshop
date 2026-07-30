@@ -110,25 +110,6 @@
   h2.section-title{ font-size:28px; }
   .section-sub{ color:var(--muted); font-size:14px; max-width:40ch; }
 
-  .brief-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:48px; }
-  .brief-grid p{ color:var(--muted); font-size:16px; }
-  .brief-grid p strong{ color:var(--ink); font-weight:500; }
-  .specs{ display:flex; flex-direction:column; gap:0; border:1px solid var(--purple-line); }
-  .specs .row{ display:flex; justify-content:space-between; padding:14px 16px; border-bottom:1px solid var(--purple-line); font-size:13px; }
-  .specs .row:last-child{ border-bottom:none; }
-  .specs .row span:first-child{ color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-size:11px; }
-  .specs .row span:last-child{ font-family:'IBM Plex Mono'; }
-  @media (max-width:700px){ .brief-grid{ grid-template-columns:1fr; } }
-
-  .seq{ display:flex; flex-direction:column; }
-  .seq-item{ display:grid; grid-template-columns:56px 90px 1fr; gap:20px; padding:22px 0; border-bottom:1px solid var(--purple-line); align-items:start; }
-  .seq-item:last-child{ border-bottom:none; }
-  .seq-num{ font-family:'Space Grotesk'; font-weight:600; font-size:20px; color:var(--purple); }
-  .seq-time{ font-family:'IBM Plex Mono'; font-size:12px; color:var(--muted); padding-top:4px; }
-  .seq-body h3{ font-size:17px; font-weight:600; }
-  .seq-body p{ margin:6px 0 0; color:var(--muted); font-size:14px; max-width:56ch; }
-  @media (max-width:600px){ .seq-item{ grid-template-columns:36px 1fr; } .seq-time{ grid-column:2; order:2; } .seq-body{ grid-column:2; order:3; } }
-
   .workshops{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
   @media (max-width:700px){ .workshops{ grid-template-columns:1fr; } }
   .wcard{ border:1px solid var(--purple-line); padding:24px; display:flex; flex-direction:column; gap:14px; }
@@ -155,24 +136,6 @@
   .kickstart-box h3{ font-size:18px; color:var(--purple); }
   .kickstart-note{ margin-top:14px; font-size:13px; color:var(--muted); max-width:52ch; }
 
-  table.parts{ width:100%; border-collapse:collapse; font-size:14px; }
-  table.parts th{
-    text-align:left; font-family:'IBM Plex Mono'; font-size:11px; text-transform:uppercase;
-    letter-spacing:0.06em; color:var(--muted); font-weight:400; padding:0 0 10px; border-bottom:1px solid var(--purple-line);
-  }
-  table.parts td{ padding:14px 0; border-bottom:1px solid var(--purple-line); vertical-align:top; }
-  table.parts td.qty{ font-family:'IBM Plex Mono'; color:var(--purple); width:70px; }
-  table.parts td.note{ color:var(--muted); }
-  table.parts tr:last-child td{ border-bottom:none; }
-
-  details{ border-bottom:1px solid var(--purple-line); padding:18px 0; }
-  details:first-of-type{ border-top:1px solid var(--purple-line); }
-  summary{ cursor:pointer; font-family:'Space Grotesk'; font-weight:600; font-size:16px; list-style:none; display:flex; justify-content:space-between; align-items:center; }
-  summary::-webkit-details-marker{ display:none; }
-  summary::after{ content:"+"; color:var(--purple); font-size:20px; font-weight:400; }
-  details[open] summary::after{ content:"–"; }
-  details p{ margin:14px 0 0; color:var(--muted); font-size:15px; max-width:60ch; }
-
   footer{ padding:56px 0 40px; border-top:1px solid var(--purple-line); }
   .foot-meta{ display:flex; justify-content:space-between; color:var(--muted); font-size:13px; flex-wrap:wrap; gap:12px; }
   .foot-meta a{ color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
@@ -190,11 +153,8 @@
       WATERLOO ENGINEERING
     </div>
     <div class="navlinks">
-      <a href="#brief">The brief</a>
-      <a href="#schedule">Schedule</a>
       <a href="#workshops">Workshops</a>
       <a href="#kickstart">Kickstart challenge</a>
-      <a href="#faq">FAQ</a>
     </div>
   </div>
 </nav>
@@ -204,110 +164,26 @@
   <div class="wrap">
     <div class="eyebrow mono">ORIENTATION WEEK · FALL 2026</div>
     <h1 class="title">Design & build, from a <span class="accent">blank sheet</span> to a working prototype</h1>
-    <p class="lede">A half-day workshop for incoming first-year engineering students. No experience required — just curiosity, a team, and a willingness to prototype something that probably won't work the first time.</p>
+    <p class="lede">A four-day workshop for incoming first-year engineering students. No experience required — just curiosity, a team, and a willingness to prototype something that probably won't work the first time.</p>
     <div class="hero-ctas">
       <a class="btn" href="#workshops">See the workshops</a>
-      <a class="btn ghost" href="#schedule">See the schedule</a>
+      <a class="btn ghost" href="#kickstart">See the challenge</a>
     </div>
 
     <div class="titleblock">
-      <div><div class="tb-label">Date</div><div class="tb-value">Sat, Sep 5, 2026</div></div>
-      <div><div class="tb-label">Time</div><div class="tb-value">1:00 – 5:00 PM</div></div>
-      <div><div class="tb-label">Location</div><div class="tb-value">E7, Design Studio</div></div>
-      <div><div class="tb-label">Team size</div><div class="tb-value">4–5 students</div></div>
+      <div><div class="tb-label">Dates</div><div class="tb-value">Tue Aug 4 – Fri Aug 7, 2026</div></div>
+      <div><div class="tb-label">Time</div><div class="tb-value">8:30 AM – 4:30 PM</div></div>
+      <div><div class="tb-label">Location</div><div class="tb-value">Pearl Sullivan Engineering IDEAs Clinic, E7</div></div>
+      <div><div class="tb-label">Format</div><div class="tb-value">4-day workshop</div></div>
     </div>
   </div>
 </header>
-
-<section id="brief">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="section-num mono">01 — OVERVIEW</div>
-        <h2 class="section-title">The brief</h2>
-      </div>
-      <div class="section-sub">What this workshop is, and why it's worth an afternoon.</div>
-    </div>
-    <div class="brief-grid">
-      <p>
-        You'll be placed on a small team with other first-years and handed a real, open-ended design constraint —
-        <strong>the kind with no single correct answer.</strong> Over the course of the day, your team sketches concepts,
-        argues about trade-offs, builds a low-fidelity prototype, and tests it in front of the room.
-      </p>
-      <p>
-        It's not a competition and nothing is graded. The point is to get comfortable with the engineering design process —
-        define, ideate, prototype, test, iterate — before you hit it for real in your first-year design courses.
-      </p>
-      <div class="specs">
-        <div class="row"><span>Format</span><span>Teams of 4–5</span></div>
-        <div class="row"><span>Skill level</span><span>None assumed</span></div>
-        <div class="row"><span>Materials</span><span>Provided on-site</span></div>
-        <div class="row"><span>Cost</span><span>Free</span></div>
-        <div class="row"><span>Facilitators</span><span>Upper-year students</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="schedule">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="section-num mono">02 — RUN OF SHOW</div>
-        <h2 class="section-title">Build sequence</h2>
-      </div>
-      <div class="section-sub">Times are approximate — good ideas run long.</div>
-    </div>
-    <div class="seq">
-      <div class="seq-item">
-        <div class="seq-num">01</div>
-        <div class="seq-time">1:00 PM</div>
-        <div class="seq-body">
-          <h3>Check-in and team assignment</h3>
-          <p>Grab a name tag, find your table, meet your team and your facilitator.</p>
-        </div>
-      </div>
-      <div class="seq-item">
-        <div class="seq-num">02</div>
-        <div class="seq-time">1:20 PM</div>
-        <div class="seq-body">
-          <h3>The brief drops</h3>
-          <p>Teams receive the day's design challenge and constraints. First 20 minutes are define-the-problem, no building yet.</p>
-        </div>
-      </div>
-      <div class="seq-item">
-        <div class="seq-num">03</div>
-        <div class="seq-time">2:00 PM</div>
-        <div class="seq-body">
-          <h3>Sketch and prototype</h3>
-          <p>Rapid concept sketching, then build with materials and basic hand tools.</p>
-        </div>
-      </div>
-      <div class="seq-item">
-        <div class="seq-num">04</div>
-        <div class="seq-time">3:45 PM</div>
-        <div class="seq-body">
-          <h3>Test and iterate</h3>
-          <p>Run your prototype against the test criteria, then use the last stretch to fix what broke.</p>
-        </div>
-      </div>
-      <div class="seq-item">
-        <div class="seq-num">05</div>
-        <div class="seq-time">4:30 PM</div>
-        <div class="seq-body">
-          <h3>Show and tell</h3>
-          <p>Each team presents in two minutes flat. No slides — just the prototype and what you learned.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="workshops">
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="section-num mono">03 — SKILL SESSIONS</div>
+        <div class="section-num mono">01 — SKILL SESSIONS</div>
         <h2 class="section-title">Workshops</h2>
       </div>
       <div class="section-sub">Four hands-on sessions. Add a description and the slides/presentation link for each.</div>
@@ -353,7 +229,7 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="section-num mono">04 — CHALLENGE</div>
+        <div class="section-num mono">02 — CHALLENGE</div>
         <h2 class="section-title">Design Kickstart 2026 Challenge</h2>
       </div>
       <div class="section-sub">Space reserved for the challenge presentation.</div>
@@ -363,57 +239,6 @@
       <h3>[Add Design Kickstart 2026 Challenge presentation here]</h3>
       <p class="kickstart-note">Replace this block with an embedded Google Slides / PowerPoint iframe, or swap it for a link button pointing to the deck.</p>
     </div>
-  </div>
-</section>
-
-<section id="bring">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="section-num mono">05 — LOGISTICS</div>
-        <h2 class="section-title">What to bring</h2>
-      </div>
-      <div class="section-sub">Everything to build with is provided. This is what to bring yourself.</div>
-    </div>
-    <table class="parts">
-      <thead>
-        <tr><th>Item</th><th>Qty</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Closed-toe shoes</td><td class="qty">1 pair</td><td class="note">You'll be on your feet at a build table for most of the afternoon.</td></tr>
-        <tr><td>Clothes you don't mind marking up</td><td class="qty">—</td><td class="note">Glue, marker, and the occasional stray staple happen.</td></tr>
-        <tr><td>Water bottle</td><td class="qty">1</td><td class="note">Refill stations are in the E7 atrium.</td></tr>
-        <tr><td>Student ID</td><td class="qty">1</td><td class="note">For check-in only.</td></tr>
-        <tr><td>Curiosity</td><td class="qty">1</td><td class="note">Bad first drafts are part of the process — bring patience for your own.</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="section-num mono">06 — QUESTIONS</div>
-        <h2 class="section-title">FAQ</h2>
-      </div>
-    </div>
-    <details>
-      <summary>Do I need any design or engineering background?</summary>
-      <p>No. This workshop is built for first-years — the whole point is a first honest run at the design process before your courses formalize it.</p>
-    </details>
-    <details>
-      <summary>Can I sign up with friends?</summary>
-      <p>You can request to be on the same team, though teams are capped at five to keep things workable.</p>
-    </details>
-    <details>
-      <summary>What if I can't make the full four hours?</summary>
-      <p>Try to stay for the whole session if you can — teams depend on every member for the build and the final presentation. Let us know ahead of time if you have a hard conflict.</p>
-    </details>
-    <details>
-      <summary>Is this open to all engineering streams?</summary>
-      <p>Open to all first-year engineering students, regardless of which program you're entering.</p>
-    </details>
   </div>
 </section>
 
