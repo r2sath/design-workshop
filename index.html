@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Design Workshop — Waterloo Engineering Orientation</title>
+<title>IDEAs Clinic Engineering Design Kickstart</title>
 <meta name="description" content="First-year design workshop, Waterloo Engineering Orientation Week.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,9 +121,21 @@
     border:1px dashed var(--purple-line); border-radius:2px;
     padding:12px 14px; display:flex; align-items:center; gap:10px;
     font-family:'IBM Plex Mono'; font-size:12px; color:var(--muted);
-    background:var(--purple-tint);
+    background:var(--purple-tint); text-decoration:none;
   }
   .link-slot::before{ content:"↗"; color:var(--purple); }
+  a.link-slot{ border-style:solid; color:var(--purple); font-weight:500; }
+  a.link-slot:hover{ background:#EDE7F8; }
+
+  .files-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .filelink{
+    display:inline-flex; align-items:center; gap:6px;
+    border:1px solid var(--purple-line); border-radius:2px;
+    padding:8px 12px; font-family:'IBM Plex Mono'; font-size:12px;
+    color:var(--purple); text-decoration:none; background:var(--purple-tint);
+  }
+  .filelink:hover{ background:#EDE7F8; border-color:var(--purple); }
+  .filelink .ext{ color:var(--muted); }
 
   .kickstart-box{
     border:1px dashed var(--purple-line);
@@ -162,7 +174,7 @@
 <header class="hero">
   <div class="grid-bg"></div>
   <div class="wrap">
-    <div class="eyebrow mono">IDEAs Clinic Engineering Design Kickstart</div>
+    <div class="eyebrow mono">IDEAs Clinic Engineering Design Kickstart· 2026</div>
     <h1 class="title">Design a system that helps an individual user monitor and manage their <span class="accent">personal comfort in a study environment</span></h1>
     <p class="lede">Design Kickstart is hands-on, collaborative, and designed to help you feel confident and connected before the term starts. Because each day builds on the previous one, attendance at all sessions is expected.</p>
     <div class="hero-ctas">
@@ -186,16 +198,19 @@
         <div class="section-num mono">01 — SKILL SESSIONS</div>
         <h2 class="section-title">Workshops</h2>
       </div>
-      <div class="section-sub">Four hands-on sessions.</div>
+      <div class="section-sub">Four hands-on sessions. Add a description and the slides/presentation link for each.</div>
     </div>
     <div class="workshops">
       <div class="wcard">
         <div class="wcard-top">
-          <h3>Arduino</h3>
+          <h3>Microcontrollers and Circuits</h3>
           <span class="wcard-num">01</span>
         </div>
-        <p class="placeholder-text">[Add workshop description here]</p>
-        <div class="link-slot">[Add presentation link here]</div>
+        <p class="placeholder-text">Breadboarding and testing a simple LED circuit, reading resistance and voltage with a multimeter, then bringing in the Arduino Uno to control that circuit with digital I/O, pull-up/pull-down resistors, and finally analog input and Serial/UART communication with a potentiometer.</p>
+        <div class="files-row">
+          <a class="filelink" href="presentations/Microcontrollers_and_Circuits_Introduction.pdf" target="_blank" rel="noopener">View guide <span class="ext">· PDF</span></a>
+          <a class="filelink" href="presentations/Intro_to_MCUs_and_Circuits.pptx" target="_blank" rel="noopener">Slides <span class="ext">· PPTX</span></a>
+        </div>
       </div>
       <div class="wcard">
         <div class="wcard-top">
@@ -218,8 +233,11 @@
           <h3>Soldering</h3>
           <span class="wcard-num">04</span>
         </div>
-        <p class="placeholder-text">[Add workshop description here]</p>
-        <div class="link-slot">https://uofwaterloo.sharepoint.com/:p:/r/sites/SustainabilityandSocialEntrepreneurshipFellowship-DesignKickstartOrganizers/Shared%20Documents/2026/Day%202%20Workshop%20Slide%20%26%20Resources/Soldering%20Workshop/Intro%20to%20Soldering%20Workshop.pptx?d=w134bb92b811c4b49b9195721ff6ad6a8&csf=1&web=1&e=sBeL3C</div>
+        <p class="placeholder-text">What soldering is, why it beats a breadboard for permanent circuits, soldering iron safety, the step-by-step technique, and common mistakes to watch for — then a hands-on build of a simple LED circuit on a perf board.</p>
+        <div class="files-row">
+          <a class="filelink" href="presentations/Intro_to_Soldering_Workshop.pdf" target="_blank" rel="noopener">View slides <span class="ext">· PDF</span></a>
+          <a class="filelink" href="presentations/Intro_to_Soldering_Workshop.pptx" target="_blank" rel="noopener">Slides <span class="ext">· PPTX</span></a>
+        </div>
       </div>
     </div>
   </div>
@@ -235,9 +253,10 @@
       <div class="section-sub">Space reserved for the challenge presentation.</div>
     </div>
     <div class="kickstart-box">
-      <div class="mono">PRESENTATION SLOT</div>
-      <h3>[Add Design Kickstart 2026 Challenge presentation here]</h3>
-      <p class="kickstart-note">Replace this block with an embedded Google Slides / PowerPoint iframe, or swap it for a link button pointing to the deck.</p>
+      <div class="mono">CHALLENGE: ENVIROSYNC</div>
+      <h3>Design a system that helps a student monitor and manage their personal comfort in a study environment.</h3>
+      <p class="kickstart-note">Teams work through a team contract, then use GenAI-assisted research, conceptual, functional, and detailed design steps to reach an optimal solution — with a problem statement and criteria &amp; constraints due by end of day.</p>
+      <a class="btn" href="presentations/Design_Kickstart_2026_Challenge.pptx" target="_blank" rel="noopener">Download presentation (PPTX)</a>
     </div>
   </div>
 </section>
@@ -245,7 +264,7 @@
 <footer>
   <div class="wrap">
     <div class="foot-meta">
-      <span>Waterloo Engineering · Orientation Week 2026</span>
+      <span>IDEAs Clinic Engineering Design Kickstart 2026</span>
     </div>
   </div>
 </footer>
