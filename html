@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDEAs Clinic Engineering Design Kickstart</title>
+<meta name="description" content="First-year design workshop, Waterloo Engineering Orientation Week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple:#4C2A85;
+    --purple-deep:#331D5C;
+    --purple-tint:#F4F1FA;
+    --purple-line:#DED4F2;
+    --lilac:#8B5CF6;
+    --paper:#FFFFFF;
+    --ink:#231A38;
+    --muted:#6E6480;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    margin:0;
+    color:var(--ink);
+  }
+  .mono{ font-family:'IBM Plex Mono',monospace; }
+  a{ color:inherit; }
+
+  .grid-bg{
+    background-image:
+      linear-gradient(var(--purple-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--purple-line) 1px, transparent 1px);
+    background-size:40px 40px;
+    background-position:-1px -1px;
+    opacity:0.55;
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+  }
+  section, header, footer{ position:relative; }
+  .wrap{ max-width:960px; margin:0 auto; padding:0 28px; }
+
+  nav{
+    position:sticky; top:0; z-index:10;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--purple-line);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .mark{ display:flex; align-items:center; gap:10px; font-family:'Space Grotesk'; font-weight:600; font-size:15px; letter-spacing:0.02em; }
+  .mark svg{ display:block; }
+  .navlinks{ display:flex; gap:28px; font-size:14px; }
+  .navlinks a{ text-decoration:none; color:var(--muted); transition:color .15s; }
+  .navlinks a:hover{ color:var(--purple); }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--purple); color:#fff;
+    font-family:'Space Grotesk'; font-weight:600; font-size:14px;
+    padding:10px 18px; border-radius:2px; text-decoration:none;
+    border:1px solid var(--purple);
+  }
+  .btn.ghost{ background:transparent; color:var(--ink); border:1px solid var(--purple-line); }
+  .btn:hover{ filter:brightness(1.1); }
+
+  header.hero{ padding:96px 0 64px; overflow:hidden; }
+  .eyebrow{
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--purple); margin-bottom:18px; display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--purple); display:block; }
+  h1.title{ font-size:clamp(34px,6vw,58px); line-height:1.05; max-width:16ch; letter-spacing:-0.01em; }
+  .title .accent{ color:var(--purple); }
+  .lede{ margin-top:22px; max-width:52ch; color:var(--muted); font-size:17px; }
+  .hero-ctas{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; }
+
+  .titleblock{
+    margin-top:64px;
+    border:1px solid var(--purple-line);
+    background:var(--purple-tint);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+  }
+  .titleblock div{
+    padding:16px 18px;
+    border-right:1px solid var(--purple-line);
+  }
+  .titleblock div:last-child{ border-right:none; }
+  .tb-label{ font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .tb-value{ font-family:'IBM Plex Mono'; font-size:14px; color:var(--ink); }
+  @media (max-width:700px){
+    .titleblock{ grid-template-columns:repeat(2,1fr); }
+    .titleblock div:nth-child(2){ border-right:none; }
+    .titleblock div:nth-child(odd){ border-bottom:1px solid var(--purple-line); }
+  }
+
+  section{ padding:72px 0; border-top:1px solid var(--purple-line); }
+  .section-head{ display:flex; justify-content:space-between; align-items:baseline; gap:20px; margin-bottom:36px; flex-wrap:wrap; }
+  .section-num{ font-family:'IBM Plex Mono'; color:var(--purple); font-size:13px; }
+  h2.section-title{ font-size:28px; }
+  .section-sub{ color:var(--muted); font-size:14px; max-width:40ch; }
+
+  .workshops{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:700px){ .workshops{ grid-template-columns:1fr; } }
+  .wcard{ border:1px solid var(--purple-line); padding:24px; display:flex; flex-direction:column; gap:14px; }
+  .wcard-top{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .wcard-num{ font-family:'IBM Plex Mono'; font-size:12px; color:var(--purple); }
+  .wcard h3{ font-size:19px; }
+  .wcard .placeholder-text{ color:var(--muted); font-size:14px; margin:0; }
+  .link-slot{
+    border:1px dashed var(--purple-line); border-radius:2px;
+    padding:12px 14px; display:flex; align-items:center; gap:10px;
+    font-family:'IBM Plex Mono'; font-size:12px; color:var(--muted);
+    background:var(--purple-tint); text-decoration:none;
+  }
+  .link-slot::before{ content:"↗"; color:var(--purple); }
+  a.link-slot{ border-style:solid; color:var(--purple); font-weight:500; }
+  a.link-slot:hover{ background:#EDE7F8; }
+
+  .files-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .filelink{
+    display:inline-flex; align-items:center; gap:6px;
+    border:1px solid var(--purple-line); border-radius:2px;
+    padding:8px 12px; font-family:'IBM Plex Mono'; font-size:12px;
+    color:var(--purple); text-decoration:none; background:var(--purple-tint);
+  }
+  .filelink:hover{ background:#EDE7F8; border-color:var(--purple); }
+  .filelink .ext{ color:var(--muted); }
+
+  .kickstart-box{
+    border:1px dashed var(--purple-line);
+    background:var(--purple-tint);
+    padding:56px 32px;
+    text-align:center;
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+  }
+  .kickstart-box .mono{ font-size:12px; color:var(--muted); letter-spacing:0.04em; }
+  .kickstart-box h3{ font-size:18px; color:var(--purple); }
+  .kickstart-note{ margin-top:14px; font-size:13px; color:var(--muted); max-width:52ch; }
+
+  footer{ padding:56px 0 40px; border-top:1px solid var(--purple-line); }
+  .foot-meta{ display:flex; justify-content:space-between; color:var(--muted); font-size:13px; flex-wrap:wrap; gap:12px; }
+  .foot-meta a{ color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+  .foot-meta a:hover{ color:var(--purple); }
+
+  ::selection{ background:var(--lilac); color:#fff; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="mark">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1L19 18H1L10 1Z" stroke="#4C2A85" stroke-width="1.4"/><path d="M10 8L14.5 16H5.5L10 8Z" stroke="#4C2A85" stroke-width="1"/></svg>
+      WATERLOO ENGINEERING
+    </div>
+    <div class="navlinks">
+      <a href="#workshops">Workshops</a>
+      <a href="#kickstart">Kickstart challenge</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow mono">IDEAs Clinic Engineering Design Kickstart · 2026</div>
+    <h1 class="title">Design a system that helps an individual user monitor and manage their <span class="accent">personal comfort in a study environment</span></h1>
+    <p class="lede">Design Kickstart is hands-on, collaborative, and designed to help you feel confident and connected before the term starts. Because each day builds on the previous one, attendance at all sessions is expected.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="#workshops">See the workshops</a>
+      <a class="btn ghost" href="#kickstart">See the challenge</a>
+    </div>
+
+    <div class="titleblock">
+      <div><div class="tb-label">Dates</div><div class="tb-value">Tue Aug 4 – Fri Aug 7, 2026</div></div>
+      <div><div class="tb-label">Time</div><div class="tb-value">8:30 AM – 4:30 PM</div></div>
+      <div><div class="tb-label">Location</div><div class="tb-value">Pearl Sullivan Engineering IDEAs Clinic, E7</div></div>
+      <div><div class="tb-label">Format</div><div class="tb-value">4-day workshop</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="workshops">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num mono">01 — SKILL SESSIONS</div>
+        <h2 class="section-title">Workshops</h2>
+      </div>
+      <div class="section-sub">Four hands-on sessions. Add a description and the slides/presentation link for each.</div>
+    </div>
+    <div class="workshops">
+      <div class="wcard">
+        <div class="wcard-top">
+          <h3>Microcontrollers and Circuits</h3>
+          <span class="wcard-num">01</span>
+        </div>
+        <p class="placeholder-text">Breadboarding and testing a simple LED circuit, reading resistance and voltage with a multimeter, then bringing in the Arduino Uno to control that circuit with digital I/O, pull-up/pull-down resistors, and finally analog input and Serial/UART communication with a potentiometer.</p>
+        <div class="files-row">
+          <a class="filelink" href="https://raw.githubusercontent.com/r2sath/design-workshop/main/Microcontrollers%20and%20Circuits%20Introduction.pdf" target="_blank" rel="noopener">View guide <span class="ext">· PDF</span></a>
+          <a class="filelink" href="https://raw.githubusercontent.com/r2sath/design-workshop/main/Intro%20to%20MCUs%20and%20Circuits.pptx" download target="_blank" rel="noopener">Download slides <span class="ext">· PPTX</span></a>
+        </div>
+      </div>
+      <div class="wcard">
+        <div class="wcard-top">
+          <h3>Figma</h3>
+          <span class="wcard-num">02</span>
+        </div>
+        <p class="placeholder-text">[Add workshop description here]</p>
+        <div class="link-slot">[Add presentation link here]</div>
+      </div>
+      <div class="wcard">
+        <div class="wcard-top">
+          <h3>CAD + 3D printing</h3>
+          <span class="wcard-num">03</span>
+        </div>
+        <p class="placeholder-text">[Add workshop description here]</p>
+        <div class="link-slot">[Add presentation link here]</div>
+      </div>
+      <div class="wcard">
+        <div class="wcard-top">
+          <h3>Soldering</h3>
+          <span class="wcard-num">04</span>
+        </div>
+        <p class="placeholder-text">What soldering is, why it beats a breadboard for permanent circuits, soldering iron safety, the step-by-step technique, and common mistakes to watch for — then a hands-on build of a simple LED circuit on a perf board.</p>
+        <div class="files-row">
+          <a class="filelink" href="https://raw.githubusercontent.com/r2sath/design-workshop/main/Intro%20to%20Soldering%20Workshop.pdf" target="_blank" rel="noopener">View slides <span class="ext">· PDF</span></a>
+          <a class="filelink" href="https://raw.githubusercontent.com/r2sath/design-workshop/main/Intro%20to%20Soldering%20Workshop.pptx" download target="_blank" rel="noopener">Download slides <span class="ext">· PPTX</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kickstart">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num mono">02 — CHALLENGE</div>
+        <h2 class="section-title">Design Kickstart 2026 Challenge</h2>
+      </div>
+    </div>
+    <div class="kickstart-box">
+      <div class="mono">CHALLENGE: ENVIROSYNC</div>
+      <h3>Design a system that helps a student monitor and manage their personal comfort in a study environment.</h3>
+      <p class="kickstart-note">Teams work through a team contract, then use GenAI-assisted research, conceptual, functional, and detailed design steps to reach an optimal solution — with a problem statement and criteria &amp; constraints due by end of day.</p>
+      <a class="btn" href="https://raw.githubusercontent.com/r2sath/design-workshop/main/Design%20Challenge%202026%20-%20Adaptive%20Comfort%20Regulation.pptx" download target="_blank" rel="noopener">Download presentation (PPTX)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-meta">
+      <span>IDEAs Clinic Engineering Design Kickstart 2026</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
