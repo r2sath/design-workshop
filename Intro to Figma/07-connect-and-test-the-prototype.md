@@ -1,3 +1,13 @@
+## Tutorial Sections
+
+1. [Getting Started in Figma](01-getting-started-in-figma.md)
+2. [Design Reference](02-design-reference.md)
+3. [Create the Menu Screen](03-create-the-menu-screen.md)
+4. [Create the Item Details Screen](04-create-the-item-details-screen.md)
+5. [Create the Order Summary Screen](05-create-the-order-summary-screen.md)
+6. [Create the Confirmation Screen](06-create-the-confirmation-screen.md)
+7. **Connect and Test the Prototype**
+
 # 7. Connect and Test the Prototype
 
 The four screens currently show what the café app could look like, but they are not interactive yet.
@@ -160,19 +170,6 @@ Confirm that:
 4. Confirm that each button opens the correct screen.
 5. Return to Item Details and test the `< Back` button separately.
 
-## 7.11. Test with a Partner
-
-Ask a partner to use the prototype without explaining what to click.
-
-Observe whether they can:
-
-- Identify how to view the Iced Latte.
-- Understand what the Back button does.
-- Add the item to the order.
-- Review and place the order.
-- Recognize that the order was successful.
-- Return to the Menu.
-
 Ask:
 
 - Was the next action clear on every screen?
@@ -181,7 +178,7 @@ Ask:
 - Was any text difficult to read?
 - Did the flow behave as expected?
 
-Record any useful feedback and make small improvements if time allows.
+If time allows, explore and make your own improvements to the prototype.
 
 ## 7.12. Final Checklist
 
@@ -211,3 +208,7 @@ You created an **interactive interface prototype**. It demonstrates:
 - How the user moves through the ordering flow.
 
 The prototype does not process payments, save an order, or communicate with a real café. Those behaviours would require software development beyond the interface design created in Figma.
+
+---
+
+[Back to start](README.md)
