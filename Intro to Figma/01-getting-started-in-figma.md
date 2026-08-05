@@ -152,4 +152,4 @@ You are now ready to create the colour styles and review the sample café conten
 
 ---
 
-[Next: Section 2 – Design Reference](https://github.com/USERNAME/REPOSITORY/blob/main/02-design-reference.md)
+[Next: Section 2 – Design Reference](https://github.com/r2sath/design-workshop/blob/main/02-design-reference.md)
