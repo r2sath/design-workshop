@@ -152,4 +152,4 @@ You are now ready to create the colour styles and review the sample café conten
 
 ---
 
-[Next: Section 2 – Design Reference](01-getting-started-in-figma.md)
+[Next: Section 2 – Design Reference](02-design-reference.md)
