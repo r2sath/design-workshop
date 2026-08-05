@@ -35,14 +35,14 @@ By completing this tutorial, you will be able to:
 
 ## Tutorial Sections
 
-1. [Getting Started in Figma](https://github.com/r2sath/design-workshop/blob/9a7efc4b915986d4fec75e93ffb16a84f8e6f85a/Intro%20to%20Figma/01-getting-started-in-figma.md)
-2. [Design Reference](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/02-design-reference.md)
-3. [Create the Menu Screen](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/03-create-the-menu-screen.md)
-4. [Create the Item Details Screen](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/04-create-the-item-details-screen.md)
-5. [Create the Order Summary Screen](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/05-create-the-order-summary-screen.md)
-6. [Create the Confirmation Screen](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/06-create-the-confirmation-screen.md)
-7. [Connect and Test the Prototype](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/07-connect-and-test-the-prototype.md)
+1. [Getting Started in Figma](01-getting-started-in-figma.md)
+2. [Design Reference](02-design-reference.md)
+3. [Create the Menu Screen](03-create-the-menu-screen.md)
+4. [Create the Item Details Screen](04-create-the-item-details-screen.md)
+5. [Create the Order Summary Screen](05-create-the-order-summary-screen.md)
+6. [Create the Confirmation Screen](06-create-the-confirmation-screen.md)
+7. [Connect and Test the Prototype](07-connect-and-test-the-prototype.md)
 
 ---
 
-[Start the tutorial: Section 1 – Getting Started in Figma](https://github.com/r2sath/design-workshop/blob/9a7efc4b915986d4fec75e93ffb16a84f8e6f85a/Intro%20to%20Figma/01-getting-started-in-figma.md)
+[Start the tutorial: Section 1 – Getting Started in Figma](01-getting-started-in-figma.md)
