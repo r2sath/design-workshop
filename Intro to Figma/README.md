@@ -35,7 +35,7 @@ By completing this tutorial, you will be able to:
 
 ## Tutorial Sections
 
-1. [Getting Started in Figma](https://github.com/r2sath/design-workshop/blob/c508562cf35a6e30cf91d07dd29f7ab2a7769a11/Intro%20to%20Figma/01-getting-started-in-figma.md)
+1. [Getting Started in Figma](https://github.com/r2sath/design-workshop/blob/9a7efc4b915986d4fec75e93ffb16a84f8e6f85a/Intro%20to%20Figma/01-getting-started-in-figma.md)
 2. [Design Reference](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/02-design-reference.md)
 3. [Create the Menu Screen](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/03-create-the-menu-screen.md)
 4. [Create the Item Details Screen](https://github.com/r2sath/design-workshop/blob/44b6dd3079236f0e6bfb9aca4e515621f3fde283/Intro%20to%20Figma/04-create-the-item-details-screen.md)
@@ -45,4 +45,4 @@ By completing this tutorial, you will be able to:
 
 ---
 
-[Start the tutorial: Section 1 – Getting Started in Figma](https://github.com/r2sath/design-workshop/blob/c508562cf35a6e30cf91d07dd29f7ab2a7769a11/Intro%20to%20Figma/01-getting-started-in-figma.md)
+[Start the tutorial: Section 1 – Getting Started in Figma](https://github.com/r2sath/design-workshop/blob/9a7efc4b915986d4fec75e93ffb16a84f8e6f85a/Intro%20to%20Figma/01-getting-started-in-figma.md)
