@@ -1,6 +1,6 @@
 ## Tutorial Sections
 
-1. [Getting Started in Figma](01-getting-started-in-figma.md)
+1. **Getting Started in Figma**
 2. [Design Reference](02-design-reference.md)
 3. [Create the Menu Screen](03-create-the-menu-screen.md)
 4. [Create the Item Details Screen](04-create-the-item-details-screen.md)
