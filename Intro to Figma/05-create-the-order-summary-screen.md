@@ -1,3 +1,15 @@
+## Tutorial Sections
+
+1. [Getting Started in Figma](01-getting-started-in-figma.md)
+2. [Design Reference](02-design-reference.md)
+3. [Create the Menu Screen](03-create-the-menu-screen.md)
+4. [Create the Item Details Screen](04-create-the-item-details-screen.md)
+5. **Create the Order Summary Screen**
+6. [Create the Confirmation Screen](06-create-the-confirmation-screen.md)
+7. [Connect and Test the Prototype](07-connect-and-test-the-prototype.md)
+
+---
+
 # 5. Create the Order Summary Screen
 
 The **Order Summary** screen allows the user to review the selected item and its total price before placing the order.
@@ -247,8 +259,6 @@ Your Order Summary screen should contain:
 - [ ] A full-width `Button / Place Order`
 - [ ] An automatic gap between the main content and bottom button
 
-Do not add prototype connections yet.
-
 ---
 
-[Next: Section 6 – Create the Confirmation Screen](https://github.com/USERNAME/REPOSITORY/blob/main/06-create-the-confirmation-screen.md)
+[Next: Section 6 – Create the Confirmation Screen](06-create-the-confirmation-screen.md)
