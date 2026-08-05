@@ -1,3 +1,7 @@
+[Previous: Section 2 – Design Reference](02-design-reference.md)
+
+---
+
 # 3. Create the Menu Screen
 
 The **Menu** screen is the first screen users will see when they open the café app. It introduces the café and displays three available menu items.
@@ -468,4 +472,4 @@ Do not add prototype connections yet.
 
 ---
 
-[Next: Section 4 – Create the Item Details Screen](https://github.com/USERNAME/REPOSITORY/blob/main/04-create-the-item-details-screen.md)
+[Next: Section 4 – Create the Item Details Screen](04-create-the-item-details-screen.md)
