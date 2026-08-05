@@ -8,7 +8,7 @@ The goal is not to build a fully functioning app. Instead, you will create an in
 
 [INSTRUCTOR'S EXAMPLE PROTOTYPE](https://www.figma.com/proto/zRnZkBRNPQeFYpygnwzVGD/Campus-Caf%C3%A9-Prototype---Example?node-id=0-1&t=3akV0FvgethXLOd3-1)
 
-[DOWNLOAD PICTURES TO USE IN APP](resources) (Download entire folder)
+[DOWNLOAD PICTURES TO USE IN APP](resources/menu_images.zip)
 
 ## Project Outcome
 
