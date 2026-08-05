@@ -1,3 +1,15 @@
+## Tutorial Sections
+
+1. [Getting Started in Figma](01-getting-started-in-figma.md)
+2. [Design Reference](02-design-reference.md)
+3. [Create the Menu Screen](03-create-the-menu-screen.md)
+4. [Create the Item Details Screen](04-create-the-item-details-screen.md)
+5. [Create the Order Summary Screen](05-create-the-order-summary-screen.md)
+6. **Create the Confirmation Screen**
+7. [Connect and Test the Prototype](07-connect-and-test-the-prototype.md)
+
+---
+
 # 6. Create the Confirmation Screen
 
 The **Confirmation** screen tells the user that the order has been placed successfully and provides a way to return to the Menu screen.
@@ -193,8 +205,6 @@ Your Confirmation screen should contain:
 - [ ] A full-width `Button / Back to Menu`
 - [ ] Clearly named and nested layers
 
-Do not add prototype connections yet.
-
 ---
 
-[Next: Section 7 – Connect and Test the Prototype](https://github.com/USERNAME/REPOSITORY/blob/main/07-connect-and-test-the-prototype.md)
+[Next: Section 7 – Connect and Test the Prototype](07-connect-and-test-the-prototype.md)
