@@ -476,8 +476,6 @@ Your Menu screen should contain:
 - [ ] Three correctly saved image styles
 - [ ] Clearly named and nested layers
 
-Do not add prototype connections yet.
-
 ---
 
 [Next: Section 4 – Create the Item Details Screen](04-create-the-item-details-screen.md)
