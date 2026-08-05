@@ -1,3 +1,15 @@
+## Tutorial Sections
+
+1. [Getting Started in Figma](01-getting-started-in-figma.md)
+2. [Design Reference](02-design-reference.md)
+3. [Create the Menu Screen](03-create-the-menu-screen.md)
+4. [Create the Item Details Screen](04-create-the-item-details-screen.md)
+5. [Create the Order Summary Screen](05-create-the-order-summary-screen.md)
+6. [Create the Confirmation Screen](06-create-the-confirmation-screen.md)
+7. [Connect and Test the Prototype](07-connect-and-test-the-prototype.md)
+
+---
+
 # 1. Getting Started in Figma
 
 In this section, you will create your design file, give it a clear name, and become familiar with the main areas of the Figma interface.
