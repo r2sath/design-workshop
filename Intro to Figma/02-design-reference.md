@@ -95,9 +95,9 @@ Use the following information throughout the tutorial:
 
 | Item | Description | Price | Image |
 |---|---|---:|---|
-| Iced Latte | Espresso, milk and ice | `$4.50` | Supplied Iced Latte image |
-| Blueberry Muffin | Baked fresh this morning | `$3.25` | Supplied Blueberry Muffin image |
-| Grilled Cheese | Cheddar on toasted sourdough | `$6.50` | Supplied Grilled Cheese image |
+| Iced Latte | Espresso, milk and ice | `$4.50` | [Supplied Iced Latte image](resources/iced_latte.png) |
+| Blueberry Muffin | Baked fresh this morning | `$3.25` | [Supplied Blueberry Muffin image](resources/blueberry_muffin.png) |
+| Grilled Cheese | Cheddar on toasted sourdough | `$6.50` | [Supplied Grilled Cheese image](resources/grilled_cheese.png) |
 
 The main prototype path will use the Iced Latte:
 
