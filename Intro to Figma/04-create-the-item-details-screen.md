@@ -272,4 +272,4 @@ Do not add prototype connections yet.
 
 ---
 
-[Next: Section 5 – Create the Order Summary Screen](https://github.com/USERNAME/REPOSITORY/blob/main/05-create-the-order-summary-screen.md)
+[Next: Section 5 – Create the Order Summary Screen](05-create-the-order-summary-screen.md)
