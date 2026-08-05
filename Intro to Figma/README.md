@@ -4,6 +4,9 @@ This tutorial introduces the basic tools and workflow used to design an app inte
 
 The goal is not to build a fully functioning app. Instead, you will create an interactive prototype that demonstrates what the app could look like and how a user would move through it.
 
+[TEMPLATE WITH COLOUR STYLES](https://www.figma.com/design/bc8SrpspCdCN61W9BOt5Vw/Campus-Caf%C3%A9-Prototype---Name?node-id=0-1&t=eY1tsOWrtwRkNKVj-1) - Please duplicate this on your Figma account for a faster start.
+
+[INSTRUCTOR'S EXAMPLE PROTOTYPE](https://www.figma.com/proto/zRnZkBRNPQeFYpygnwzVGD/Campus-Caf%C3%A9-Prototype---Example?node-id=0-1&t=3akV0FvgethXLOd3-1)
 
 ## Project Outcome
 
