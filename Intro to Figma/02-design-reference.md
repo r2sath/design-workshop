@@ -1,3 +1,5 @@
+[Previous: Section 1 – Getting Started](01-getting-started-in-figma.md)
+
 # 2. Design Reference
 
 Use the colours and sample menu information below while creating your café app. Using the same reference information will make it easier to follow the tutorial and compare your work with the demonstrated example.
@@ -95,4 +97,4 @@ Only the Iced Latte requires a detailed item screen in this tutorial. The other 
 
 ---
 
-[Next: Section 3 – Create the Menu Screen](https://github.com/USERNAME/REPOSITORY/blob/main/03-create-the-menu-screen.md)
+[Next: Section 3 – Create the Menu Screen](03-create-the-menu-screen.md)
